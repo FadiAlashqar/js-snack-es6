@@ -22,3 +22,13 @@ const teams = [
         fouls: 0,
     },
 ]
+
+const max = 100;
+
+function generatePoints(num) {
+    return Math.floor(Math.random() * num) + 1
+    
+}
+
+let randomNum = generatePoints(max);
+console.log(randomNum);
