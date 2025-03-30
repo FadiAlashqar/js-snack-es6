@@ -18,3 +18,16 @@ const bikes = [
         weight: 8,
     },
 ]
+
+let maxWeight = bikes[0].weight;
+
+for (let i = 0; i < bikes.length; i++) {
+    if (maxWeight < bikes[i].weight) {
+        
+        maxWeight = bikes[i].weight;
+        
+    }
+    
+}
+
+console.log(`l'ammontare della bici più pesante è di ${maxWeight} Kg`);
