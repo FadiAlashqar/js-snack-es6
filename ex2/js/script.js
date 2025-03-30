@@ -31,4 +31,15 @@ function generatePoints(num) {
 }
 
 let randomNum = generatePoints(max);
-console.log(randomNum);
+
+const teamsFouls = [];
+
+for (let i = 0; i < teams.length; i++) {
+    
+    let randomNum = generatePoints(max);
+    teams[i].fouls = randomNum;
+    teamsFouls.push({ name: teams[i].name, fouls: teams[i].fouls });
+
+    
+}
+console.log(teamsFouls);
