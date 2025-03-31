@@ -22,7 +22,7 @@ const bikes = [
 let maxWeight = bikes[0].weight;
 
 for (let i = 0; i < bikes.length; i++) {
-    if (maxWeight < bikes[i].weight) {
+    if (maxWeight > bikes[i].weight) {
         
         maxWeight = bikes[i].weight;
         
@@ -30,4 +30,4 @@ for (let i = 0; i < bikes.length; i++) {
     
 }
 
-console.log(`l'ammontare della bici più pesante è di ${maxWeight} Kg`);
+console.log(`l'ammontare della bici meno pesante è di ${maxWeight} Kg`);
