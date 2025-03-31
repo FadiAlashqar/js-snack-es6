@@ -32,14 +32,17 @@ function generatePoints(num) {
 
 let randomNum = generatePoints(max);
 
-const teamsFouls = [];
+const teamsFoulsPoints = [];
 
 for (let i = 0; i < teams.length; i++) {
     
-    let randomNum = generatePoints(max);
-    teams[i].fouls = randomNum;
-    teamsFouls.push({ name: teams[i].name, fouls: teams[i].fouls });
+    let randomPoints = generatePoints(max);
+    let randomFouls = generatePoints(max);
+
+    teams[i].fouls = randomFouls;
+    teams[i].points = randomPoints;
+    teamsFoulsPoints.push({ name: teams[i].name, fouls: teams[i].fouls, points: teams[i].points, });
 
     
 }
-console.log(teamsFouls);
+console.log(teamsFoulsPoints);
